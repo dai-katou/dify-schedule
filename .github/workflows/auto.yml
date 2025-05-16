@@ -2,7 +2,15 @@ name: Auto
 
 on:
   schedule:
-    - cron: "30 22 * * *" # 北京时间上午06:30
+    - cron: '0 8 * * *'   # JST 17:00
+    - cron: '0 9 * * *'   # JST 18:00
+    - cron: '30 9 * * *'  # JST 18:30
+    - cron: '0 10 * * *'  # JST 19:00
+    - cron: '30 10 * * *' # JST 19:30
+    - cron: '0 11 * * *'  # JST 20:00
+    - cron: '30 11 * * *' # JST 20:30
+    - cron: '0 12 * * *'  # JST 21:00
+
   workflow_dispatch:
 
 env:
